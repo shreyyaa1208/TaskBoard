@@ -1,0 +1,81 @@
+.board-view {
+  min-height: 100vh;
+  background: var(--background-color);
+}
+
+.board-view-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.board-view-header h1 {
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.empty-state {
+  text-align: center;
+  padding: var(--spacing-xl) var(--spacing-lg);
+  background: var(--card-background);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.empty-state h3 {
+  margin-bottom: var(--spacing-md);
+  color: var(--text-primary);
+}
+
+.empty-state p {
+  margin-bottom: var(--spacing-lg);
+  color: var(--text-secondary);
+}
+
+.boards-table-container {
+  background: var(--card-background);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.boards-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.boards-table th {
+  background: var(--background-color);
+  padding: var(--spacing-md);
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.boards-table th:nth-child(3),
+.boards-table th:nth-child(4) {
+  text-align: center;
+}
+
+.boards-table th:last-child {
+  text-align: right;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .board-view-header {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    text-align: center;
+  }
+
+  .boards-table-container {
+    overflow-x: auto;
+  }
+
+  .boards-table {
+    min-width: 600px;
+  }
+}
