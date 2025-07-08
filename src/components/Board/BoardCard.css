@@ -1,0 +1,62 @@
+.board-card {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.board-card:hover {
+  background-color: var(--background-color);
+}
+
+.board-card td {
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: middle;
+}
+
+.board-title {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.board-description {
+  color: var(--text-secondary);
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.board-columns,
+.board-tasks {
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.board-created {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.board-actions {
+  text-align: right;
+}
+
+.btn-sm {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: 0.875rem;
+}
+
+.btn-danger {
+  background: var(--danger-color);
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #dc2626;
+}
+
+@media (max-width: 768px) {
+  .board-description {
+    max-width: 150px;
+  }
+}
