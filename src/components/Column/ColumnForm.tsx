@@ -94,7 +94,7 @@ const ColumnForm: React.FC<ColumnFormProps> = ({
     setError("");
 
     try {
-      // Simulate async operation (you might have actual async logic here)
+      // Simulate async operation 
       await new Promise((resolve) => setTimeout(resolve, 100));
       onSubmit(title.trim());
     } catch (err) {
