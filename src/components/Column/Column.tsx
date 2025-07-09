@@ -368,7 +368,7 @@ const ColumnComponent: React.FC<ColumnProps> = ({ column, filters }) => {
                 }}
               />
 
-              {/* Add Task Button */}
+              {/* Task Button */}
               <button
                 className="column__add-task-btn column__add-task-btn--with-tasks"
                 onClick={handleAddTaskClick}
