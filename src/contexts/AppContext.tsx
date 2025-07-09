@@ -136,7 +136,7 @@ const appReducer = (state: AppState, action: AppAction): AppState => {
 
       let movedTask: Task | null = null;
 
-      // Step 1: Remove task from current column and store it
+      
       const boardsAfterRemoval = state.boards.map((board) => ({
         ...board,
         columns: board.columns.map((col) => {
