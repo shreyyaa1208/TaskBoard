@@ -154,13 +154,13 @@ const appReducer = (state: AppState, action: AppAction): AppState => {
         }),
       }));
 
-      // Step 2: Insert task into new column at correct position
+      
       const finalBoards = boardsAfterRemoval.map((board) => ({
         ...board,
         columns: board.columns.map((col) => {
           if (col.id === newColumnId && movedTask) {
             const newTasks = [...col.tasks];
-            newTasks.splice(newOrder, 0, movedTask); // insert at position
+            newTasks.splice(newOrder, 0, movedTask); 
             return { ...col, tasks: newTasks };
           }
           return col;
